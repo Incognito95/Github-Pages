@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock I BYPARKEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <header>
+        <img src="main_pictures/logo.png">    
+    </header>
+    
+ 
+        <nav>
+                <a href="HOME.html">HOME</a>
+                <a href="EVENTS.html">EVENTS</a>
+                <a href="ABOUT_US.html">ABOUT US</a>
+        </nav>
+
+    <div class="rock_i_byparken">
+    <img src="main_pictures/rock-i-byparken.jpg">
+    </div>
+
+    <style>
+        .rock_i_byparken img {
+    width: 100%;
+}
+    </style>
+
+</div>
+    <style>
+            #map {
+             height: 300px;
+             width: 100%;
+            }
+         </style>
+
+
+    <div id="map"></div>
+
+    <script>
+    
+var locations = [
+    ['Byparken, Roskilde', 55.646565, 12.080788,]
+
+    ];
+
+function initMap() {
+var myLatLng = {lat: 55.645620, lng: 12.088136};
+
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: myLatLng
+    });
+
+var count;
+
+for (count = 0; count < locations.length; count++) {  
+    new google.maps.Marker({
+    position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+    map: map,
+    title: locations[count][0]
+    });
+}
+}
+     </script>
+
+
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaUy9-pUlPR53Zwh2YbxJnkBMt0Luca0k
+&callback=initMap">
+</script>
+
+<p>
+    Place: Byparken
+    <br>Time: 12. April 2018
+    <br>Price: 15 EUR
+</p>
+
+<div class="article">
+<p>
+Rock I Byparken is a Danish music festival which is held at Folkeparken, Roskilde. People que for three days in just to get the ticket. Every year, thousands gather in Roskilde, Denmark to attend.
+
+The preparation takes months. <br><br>Various acts from all over the world come to perform. Indian craftsmen work to produce the many traditional items on display. The week before the festival, the stalls are put up and the food is prepared, so that everything will be ready for the big day.
+
+<br><br>The festival begins at 4pm and theirs plenty of acts to see and so much green scenery to walk around and enjoy the warm summer weather.
+
+The festival is so fun and entertaining. It is a wonderful way to spend time with the family during your holiday!.
+</div>
+
+                                            
+    <footer>
+        &copy; Copyright 2018
+    </footer>
+    
+</body>
+</html>

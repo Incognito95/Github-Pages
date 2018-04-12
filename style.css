@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------- NAV -----------*/
+nav {
+    background-color: rgb(152, 255, 136);
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    background-color:rgb(192, 192, 192);
+    margin: 0;
+}
+
+header {
+    height: 32px;
+    background-image: url(main_pictures/banner6.jpg);
+}
+
+header img {
+    width: 110%;
+    height: auto;
+}
+
+nav a {
+    color: rgb(121,138,127);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Bangers';
+    margin: 5px;
+}
+
+main {
+    padding: 1em 1em 0;
+}
+
+/*------------- HOME -----------*/
+
+figure {
+    margin: 0;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+    
+.welcome_header h1 {
+    text-align: center;
+    font-family: 'Bangers';
+    font-size: 2em;
+    margin-left: 40px;
+}
+
+.logo img {
+    margin-bottom: 100px;
+}
+
+.logo_small {
+    width: 50%;
+    position: absolute;
+    top: 70px;
+    left: 170px;
+}
+article p {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1em;
+    text-align: justify;
+    font-family: 'calibri light';
+}
+
+/*------------- EVENTS -----------*/
+
+.img_box img {
+    width: 50%;
+    height: 120px;
+    display: block;
+}
+
+.img_box h1 {
+    color: white;
+    font-family: 'Bangers';
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.img_box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(152, 255, 136);
+    padding: 0.5em;
+}
+
+main .img_box:not(last-of-type) {
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------- ABOUT US -----------*/
+
+.gruppe img {
+    width: 100%;
+}
+
+.logo img {
+    margin-bottom: 100px;
+}
+
+
+
+.lorem_text2 p {
+    text-align: justify;
+    font-family: 'calibri light';
+}
+
+.form_group label {
+    font-family: 'Bangers';
+    margin-left: 10px;
+    display: block;
+    
+
+}
+
+.form_group input {
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    display: block;
+}
+
+.message label {
+    font-family: 'Bangers';
+    margin-left: 10px;
+
+}
+
+.form_group textarea {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 24%;
+    background-color: white;
+    padding: 122px;
+}
+
+.form_group button {
+    background-color:rgb(126,126,126);
+    color: white;
+    width: 91%;
+    margin-left: 40px;
+    font-family: 'Bangers';
+    padding: 5px;
+    font-size: 30px;
+    border: none;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: rgb(152, 255, 136);
+    text-align: center;
+    padding: 20px;
+    color: black;
+    width: 100%;
+}
+
+/*------------- ARTICLE -----------*/
+
+h3 {
+    text-align: center;
+}
+
+p {
+    float: 10px;
+    font-family: 'calibri light';
+}
+
+.lorem_text p {
+    padding-left: 300px;
+    font-family: 'calibri light';
+    font-size: 20px;
+}
+
+.logo_article img {
+    margin-bottom: 100px;
+}
+
+.header_article img {
+    height: auto;
+}
+
+.article {
+    text-align: justify;
+    font-size: 20px;
+}
+
+/*------------- FOOTER -----------*/
+
+footer {
+    font-family: 'Bangers';
+    color: rgb(121,138,127);
+    font-size: 20px;
+}

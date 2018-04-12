@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skateparken</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+
+        <header>
+                <img src="main_pictures/logo.png">
+        </header>
+    
+    <div class="nav_background">
+    <header>
+        <nav>
+                <a href="HOME.html">HOME</a>
+                <a href="EVENTS.html">EVENTS</a>
+                <a href="ABOUT_US.html">ABOUT US</a>
+        </nav>
+    </header>
+    </div>
+
+    <div class="skateparken_picture">
+    <img src="main_pictures/skateboard_trick.jpg">
+    </div>
+
+    <style>
+        .skateparken_picture img {
+    width: 100%;
+}
+    </style>
+
+</div>
+    <style>
+            #map {
+             height: 300px;
+             width: 100%;
+            }
+         </style>
+
+
+    <div id="map"></div>
+
+    <script>
+    
+var locations = [
+    ['Darup Skatepark, Roskilde', 55.622736, 12.066265,]
+
+    ];
+
+function initMap() {
+var myLatLng = {lat: 55.623075, lng: 12.067774};
+
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: myLatLng
+    });
+
+var count;
+
+for (count = 0; count < locations.length; count++) {  
+    new google.maps.Marker({
+    position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+    map: map,
+    title: locations[count][0]
+    });
+}
+}
+     </script>
+
+
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaUy9-pUlPR53Zwh2YbxJnkBMt0Luca0k
+&callback=initMap">
+</script>
+
+<p>
+    Place: Skateparken
+    <br>Time: 24/7
+    <br>Price: Free
+</p>
+
+<div class="article">
+<p>
+    One of my personal favorite events that we have to offer is the Danish Cup that was held in 2002 at Skateparken. 
+    
+    <br><br>Both Tony Hawk and Matt Hoffman got to perform for the public. Skateparken is still well known to this day where parents take their kids to use their skateboards, scooters and BMX bikes.
+</div>
+
+                                            
+    <footer>
+        &copy; Copyright 2018
+    </footer>
+    
+</body>
+</html>

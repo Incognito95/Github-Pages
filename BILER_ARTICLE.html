@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock I BYPARKEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+
+    <header>
+            <img src="main_pictures/logo.png">
+    </header>
+    
+    <div class="nav_background">
+        <nav>
+                <a href="HOME.html">HOME</a>
+                <a href="EVENTS.html">EVENTS</a>
+                <a href="ABOUT_US.html">ABOUT US</a>
+        </nav>
+    </div>
+
+    <div class="biler_picture">
+    <img src="main_pictures/mange_biler4.jpg">
+    </div>
+
+    <style>
+        .biler_picture img {
+    width: 100%;
+}
+    </style>
+
+</div>
+    <style>
+            #map {
+             height: 300px;
+             width: 100%;
+            }
+         </style>
+
+
+    <div id="map"></div>
+
+    <script>
+    
+var locations = [
+    ['Folkeparken, Roskilde', 55.645620, 12.088136,]
+
+    ];
+
+function initMap() {
+var myLatLng = {lat: 55.5790965, lng: 12.255277400000068};
+
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: myLatLng
+    });
+
+var count;
+
+for (count = 0; count < locations.length; count++) {  
+    new google.maps.Marker({
+    position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+    map: map,
+    title: locations[count][0]
+    });
+}
+}
+     </script>
+
+
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaUy9-pUlPR53Zwh2YbxJnkBMt0Luca0k
+&callback=initMap">
+</script>
+
+<p>
+    Place: Folkeparken
+    <br>Time: Thursday April - September 7-9pm
+    <br>Price: Free
+</p>
+
+<div class="article">
+<p>
+    Last but not least is the car event, which is a great place for the elderly people to enjoy their time to look around, especially for those that love classic cars. <br><br>Every thursday night theirs a car meet up with some of the best cars all the way from all the way back before we were born.
+
+    <br><br>You can experience the event every Thursday from 7pm to 9pm from April to September. Come in good time, so you can experience the spectacular sight, when many 'olides' cruise around.
+</div>
+
+                                            
+    <footer>
+        &copy; Copyright 2018
+    </footer>
+    
+</body>
+</html>
